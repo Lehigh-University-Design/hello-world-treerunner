@@ -9,7 +9,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--background-color);
-  margin: 20px;
+  margin: 1em;
   font-size: 16px;
 }
 
@@ -70,4 +70,141 @@ h2, h3, h4 {
 .container {
   max-width: 1080px;
   margin: 0 auto
+}
+
+/* Lab 3 Styles */
+
+.hide-me {
+  display: none;
+}
+
+.post span {
+  color: coral;
+}
+
+.block-div, .block {
+  display: block;
+  color: coral;
+  border: 1px solid var(--dark-color);
+  padding: 1em;
+}
+
+.block {
+  margin: 1em 0;
+}
+
+.inline-block {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.2em 0.8em;
+  color: var(--dark-color) !important;
+  background-color: coral;
+  transform: rotate(-8deg);
+  font-weight: 800;
+  font-variation-settings:
+    "wdth" 75;
+}
+
+.static {
+  position: static;
+  border: 1px solid var(--dark-color);
+}
+
+.fixed {
+  z-index: 999;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 200px;
+  padding: 1em;
+  background-color: coral;
+  border: 1px solid var(--dark-color);
+}
+
+.relative {
+  position: relative;
+  left: 1em;
+  width: calc(100% - 1em);
+  border: 1px solid var(--dark-color);
+}
+
+.absolute-demo-holder {
+  position: relative;
+  border: 1px solid var(--dark-color);
+  width: 100%;
+  margin-bottom: 1em;
+  aspect-ratio: 4/3;
+}
+
+.absolute-bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: coral;
+  border-radius: 50px;
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+}
+
+.sticky-demo-holder {
+  overflow: scroll;
+  position: relative;
+  border: 1px solid var(--dark-color);
+  width: 100%;
+  margin-bottom: 1em;
+  height: 200px;
+  p {
+    margin: 1em;
+  }
+}
+
+.sticky-bit {
+  background-color: coral;
+  position: sticky;
+  top: 0;
+  padding: 1em;
+}
+
+.float-demo-holder {
+  border: 1px solid var(--dark-color);
+  padding: 0 1em;
+  margin-bottom: 1em;
+
+  .img-right {
+    width: 15em;
+    height: auto;
+    float: right;
+    margin: 1em 0 1em 1em;
+  }
+  
+  .img-left {
+    width: 15em;
+    height: auto;
+    float: left;
+    margin: 1em 1em 1em 0;
+  }
+
+}
+
+.column-demo-holder {
+  border: 1px solid var(--dark-color);
+  padding: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+
+  .column {
+    width: calc(100%/3 - 2rem);
+    aspect-ratio: 1;
+    float: left;
+    padding: 1rem;
+    font-size: 2em;
+    font-weight: 100;
+    font-style: italic;
+    background-color: hsl(16, 100%, 66%);
+    &:nth-child(even){
+      background-color: hsl(16, 100%, 44%);;
+    }
+  }
+
 }

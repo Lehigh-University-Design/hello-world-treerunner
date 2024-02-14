@@ -93,6 +93,10 @@ h2, h3, h4 {
   margin: 1em 0;
 }
 
+.inline {
+  display: inline;
+}
+
 .inline-block {
   display: inline-block;
   text-transform: uppercase;
@@ -205,6 +209,29 @@ h2, h3, h4 {
     &:nth-child(even){
       background-color: hsl(16, 100%, 44%);;
     }
+  }
+
+  .masthead {
+    background-color: #600060;
+    margin: 1em;
+    height: 100px;
+  }
+
+  .side-nav {
+    background-color: #006060;
+    float: left;
+    margin: 1em;
+    height: 60vh;
+    width: calc(25% - 2em);
+  }
+
+  .article {
+    background-color: #606000;
+    float: left;
+    margin: 1em;
+    height: 60vh;
+    width: calc(75% - 2em);
+    
   }
 
 }

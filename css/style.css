@@ -284,7 +284,6 @@ h2, h3, h4 {
 }
 
 .grid-child-chess:hover {
-  aspect-ratio: 1;
   background-color: black !important;
 }
 
@@ -337,9 +336,9 @@ h2, h3, h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: start; /* start, center, end, space-between, space-around, space-evenly  */
+  justify-content: center; /* start, center, end, space-between, space-around, space-evenly  */
   justify-items: center; /* stretch, start, center, end */
-  align-content: start; /* start, center, end, space-between, space-around, space-evenly  */
+  align-content: center; /* start, center, end, space-between, space-around, space-evenly  */
   align-items: center; /* stretch, start, center, end */
   gap: 1em;
   margin-bottom: 1em;
@@ -357,5 +356,5 @@ h2, h3, h4 {
   height: 60vh;
   background-color: #600060;
   display: grid;
-  place-content: center;
+  place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
 }

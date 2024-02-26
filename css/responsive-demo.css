@@ -98,9 +98,6 @@ masthead a:hover {
 
 .post {
   margin-bottom: 1em;
-  .img-container {
-    aspect-ratio: 1/1;
-  }
   .post-stuff {
     display: flex;
     align-items: flex-start;

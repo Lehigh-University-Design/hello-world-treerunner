@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="../css/framework.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise - Framework</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header role="banner">
+            <h1 class="pull-right" style="margin: 0;">
+              <a href="javascript:void(0)" onclick="switchMode(this)">☀️</a>
+            </h1>
+            <h1>CSS Framework</h1>
+            <div class="clearfix"></div>
+            <p>A small CSS framework.</p>
+          </header>
+        
+        <p>A <b>CSS framework</b> is a library allowing for easier, more standards-compliant web design using the <a href="/wiki/Cascading_Style_Sheets" class="mw-redirect" title="Cascading Style Sheets">Cascading Style Sheets</a> language. Most of these frameworks contain at least a <a href="/wiki/Grid_(graphic_design)" title="Grid (graphic design)">grid</a>. More functional frameworks also come with more features and additional <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> based functions, but are mostly design oriented and focused around interactive UI patterns. This detail differentiates CSS frameworks from other <a href="/wiki/Comparison_of_JavaScript_frameworks" class="mw-redirect" title="Comparison of JavaScript frameworks">JavaScript frameworks</a>.
+        </p>
+        <p>We are using the <a href="https://jenil.github.io/chota/">Chota Framework</a> for this demo</p>
+
+        <h2>Navigation</h2>
+        <nav class="nav">
+            <div class="nav-left">
+              <a class="active">Link 1</a>
+              <a>Link 2</a>
+            </div>
+            <div class="nav-center">
+              <a class="brand">
+                Brand
+              </a>
+            </div>
+            <div class="nav-right">
+                <a>Link 3</a>
+                <a>Link 4</a>
+            </div>
+          </nav>
+
+        <h2>Card</h2>
+        <div class="card">
+            <header>
+              <h4>Card title</h4>
+            </header>
+            <p>The <code>.card</code> element is simply a container with a shadow, a border, a radius, and some padding.</p>
+            <footer class="is-right">
+              <a class="button primary">Submit</a>
+              <a class="button">Cancel</a>
+            </footer>
+          </div>
+
+          <hr>
+        
+
+        <h2>Grid</h2>
+        <div class="row">
+            <div class="col-12 col-6-md col-4-lg">
+              <div class="card is-center">.col-12.col-6-md.col-4-lg</div>
+            </div>
+            <div class="col-6 col-3-md col-4-lg">
+              <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+            </div>
+            <div class="col-6 col-3-md col-4-lg">
+              <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-6-lg">
+              <div class="card is-center">.col.col-6-lg</div>
+            </div>
+            <div class="col col-3-lg">
+              <div class="card is-center">.col.col-3-lg</div>
+            </div>
+            <div class="col col-3-lg">
+              <div class="card is-center">.col.col-3-lg</div>
+            </div>
+        </div>
+
+        <h2>Striped Table</h2>
+
+        <table class="striped">
+            <thead>
+              <tr>
+                <th>Table Heading 1</th>
+                <th>Table Heading 2</th>
+                <th>Table Heading 3</th>
+                <th>Table Heading 4</th>
+                <th>Table Heading 5</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Table Footer 1</th>
+                <th>Table Footer 2</th>
+                <th>Table Footer 3</th>
+                <th>Table Footer 4</th>
+                <th>Table Footer 5</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+              <tr>
+                <td>Table Cell 1</td>
+                <td>Table Cell 2</td>
+                <td>Table Cell 3</td>
+                <td>Table Cell 4</td>
+                <td>Table Cell 5</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+    
+<script>
+    function switchMode(el) {
+  const bodyClass = document.body.classList;
+  bodyClass.contains('dark')
+    ? (el.innerHTML = '☀️', bodyClass.remove('dark'))
+    : (el.innerHTML = '🌙', bodyClass.add('dark')); 
+}
+</script>
+
+</body>
+</html>

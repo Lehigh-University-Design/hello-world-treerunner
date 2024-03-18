@@ -7,12 +7,17 @@
     --color-darkGrey: #3f4144;
     --color-error: #d43939;
     --color-success: #28bd14;
-    --grid-maxWidth: 100rem;
+    --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
     --font-size: 1.6rem;
     --font-color: #333333;
     --font-family-sans: "Open Sans", sans-serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+  }
+
+  body {
+    padding: 0 2rem;
+    transition: all .3s ease;
   }
 
 /* Other styles..... */

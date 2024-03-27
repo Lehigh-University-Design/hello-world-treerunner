@@ -12,7 +12,7 @@ a {
     background-color: #fff;
     width: calc(100% - 2em);
     z-index: 3;
-    position: absolute;
+    position: fixed;
   }
   
   .header ul {

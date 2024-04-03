@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/srcset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Exercise - Images / Srcset</title>
+</head>
+<body>
+
+    <!-- CSS Srcset an Picture  -->
+      <div class="container post-nav">
+        <div class="post">
+            <h2>Srcset</h2>
+            <img
+              srcset="
+                ../images/sunflowers.jpg 1500w,
+                ../images/sunflowers_768.jpg 768w,
+              "
+              src="../images/sunflowers.jpg"
+              alt="sunflowers in a field"
+              >
+            <p>Srcset defines multiple sizes of the same image, allowing the browser to select the appropriate image source. Srcset is a little bit sketchy sometimes because you are at the whim of the browser. If the browser has a larger image in the cache it will use that image no matter the breakpoint.</p>
+        </div>
+      </div>
+
+      <div class="container post-nav">
+        <div class="post">
+            <h2>Picture</h2>
+            <picture>
+              <source
+                srcset="../images/sunflowers.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="../images/sunflowers_square.jpg"
+                alt="sunflowers in a field"
+              />
+            </picture>
+            <p>The picture element contains at least one img and can have multiple sources to choose from, based on the display. Picture is handy when you want to change the aspect ratio of an image at a spercific breakpoint.</p>
+            <p>Read more about setting responsive images with picture and srcset <a href="https://coderpad.io/blog/development/the-definitive-guide-to-responsive-images-on-the-web/" target="_blank"></a>here</a>.</p>
+        </div>
+      </div>
+
+</body>
+</html>
